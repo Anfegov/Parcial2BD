@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.f_cliente_nuevo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="491dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="REGISTRO CLIENTE"
+            android:textColor="#ffffff"
+            android:background="#10000000"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tV_IdentificacionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identificación:" />
+
+        <EditText
+            android:id="@+id/eT_identificacionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tV_nombreC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:" />
+
+        <EditText
+            android:id="@+id/eT_nombreC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tV_apellidoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido:" />
+
+        <EditText
+            android:id="@+id/eT_apellidoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tV_direccionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección:" />
+
+        <EditText
+            android:id="@+id/eT_direccionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/button_registroC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CF3476"
+            android:textColor="#ffffff"
+            android:text="Registrar" />
+
+    </LinearLayout>
+
+</FrameLayout>
