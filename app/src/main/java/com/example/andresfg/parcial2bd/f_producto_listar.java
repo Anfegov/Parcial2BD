@@ -1,4 +1,4 @@
-package com.example.andresfg.parcial2bd.Fragment;
+package com.example.andresfg.parcial2bd;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,29 +7,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-
-import com.example.andresfg.parcial2bd.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link f_materiap_nuevo.OnFragmentInteractionListener} interface
+ * {@link f_producto_listar.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link f_materiap_nuevo#newInstance} factory method to
+ * Use the {@link f_producto_listar#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class f_materiap_nuevo extends Fragment implements View.OnClickListener {
+public class f_producto_listar extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    EditText nombreP;
-    EditText disponibilidadP;
-    EditText valorUnitarioP;
-    Button bton;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -37,7 +29,7 @@ public class f_materiap_nuevo extends Fragment implements View.OnClickListener {
 
     private OnFragmentInteractionListener mListener;
 
-    public f_materiap_nuevo() {
+    public f_producto_listar() {
         // Required empty public constructor
     }
 
@@ -47,11 +39,11 @@ public class f_materiap_nuevo extends Fragment implements View.OnClickListener {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment f_materiap_nuevo.
+     * @return A new instance of fragment f_producto_listar.
      */
     // TODO: Rename and change types and number of parameters
-    public static f_materiap_nuevo newInstance(String param1 , String param2) {
-        f_materiap_nuevo fragment = new f_materiap_nuevo ();
+    public static f_producto_listar newInstance(String param1 , String param2) {
+        f_producto_listar fragment = new f_producto_listar ();
         Bundle args = new Bundle ();
         args.putString ( ARG_PARAM1 , param1 );
         args.putString ( ARG_PARAM2 , param2 );
@@ -72,28 +64,7 @@ public class f_materiap_nuevo extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater , ViewGroup container ,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        ViewGroup view = (ViewGroup) inflater.inflate ( R.layout.fragment_f_materiap_nuevo , container , false );
-        nombreP = (EditText) view.findViewById ( R.id.eT_nombreProducto );
-        disponibilidadP = (EditText) view.findViewById ( R.id.eT_disponibilidad ) ;
-        valorUnitarioP = (EditText) view.findViewById ( R.id.eT_valorUnitario );
-        bton = (Button) view.findViewById ( R.id.button_registro );
-        bton.setOnClickListener(this);
-
-        return view;
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.button_registro:
-                nombreP.setText("");
-                disponibilidadP.setText("");
-                valorUnitarioP.setText("");
-                break;
-            default:
-                break;
-        }
-
+        return inflater.inflate ( R.layout.fragment_f_producto_listar , container , false );
     }
 
     // TODO: Rename method, update argument and hook method into UI event
